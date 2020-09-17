@@ -4,22 +4,11 @@ int QTD = 3;
 
 int main()
 {
-    int processos[QTD][4];
-    
-    processos[0][0] = 0;
-    processos[0][1] = 3;
-    processos[0][2] = 7;
-    processos[0][3] = 20;
-    
-    processos[1][0] = 1;
-    processos[1][1] = 2;
-    processos[1][2] = 4;
-    processos[1][3] = 5;
-    
-    processos[2][0] = 2;
-    processos[2][1] = 2;
-    processos[2][2] = 8;
-    processos[2][3] = 10;
+    int processos[3][4] = {
+        {0, 3, 7, 20},
+        {1, 2, 4, 5},
+        {2, 2, 8, 10}
+    };
     
     edf(processos);
 
